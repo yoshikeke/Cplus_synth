@@ -1,17 +1,16 @@
 <template>
   <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event"/>
+    <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import EventCard from "@/components/EventCard.vue";
-
+import EventCard from '@/components/EventCard.vue'
 export default {
-  name: "HomeView",
+  name: 'Home',
   components: {
-    EventCard,
+    EventCard
   },
   data() {
     return {
@@ -52,10 +51,11 @@ export default {
       ]
     }
   }
-};
+}
 </script>
+
 <style scoped>
-.events{
+.events {
   display: flex;
   flex-direction: column;
   align-items: center;
